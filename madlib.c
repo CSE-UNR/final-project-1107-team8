@@ -28,8 +28,9 @@ int main() {
 	read_file_onto_array(fp, ROWS, COLUMNS, file_array);
 	fclose(fp);
 	get_user_inputs(ROWS, COLUMNS, file_array);
-	display_array(ROWS, COLUMNS, file_array);
 	printf("\n");
+	display_array(ROWS, COLUMNS, file_array);
+	printf("\n\n");
 	
 	return 0;
 }
