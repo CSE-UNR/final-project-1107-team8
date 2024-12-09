@@ -11,7 +11,6 @@ void read_file_onto_array(FILE* fp, int rows, int columns, char array[rows][colu
 void display_array(int rows, int columns, char array[][columns]);
 void stringSwap(char str1[], char str2[]);
 void stringCopy(char source[], char dest[]);
-
 int stringLength(char str[]);
 
 int main() {
@@ -28,9 +27,8 @@ int main() {
 	read_file_onto_array(fp, ROWS, COLUMNS, file_array);
 	fclose(fp);
 	get_user_inputs(ROWS, COLUMNS, file_array);
-	printf("\n");
 	display_array(ROWS, COLUMNS, file_array);
-	printf("\n\n");
+	printf("\n");
 	
 	return 0;
 }
