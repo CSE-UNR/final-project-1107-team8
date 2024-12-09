@@ -1,7 +1,6 @@
 //Jeff Freal, Aloysius Altarejos, Duy Vo
 //Nov 25 2024
 #include <stdio.h>
-#define TEXT_FILE "madlib2.txt"
 #define MAX_TEXT_LENGTH 1000
 #define ROWS 100
 #define COLUMNS 100
@@ -13,11 +12,11 @@ void stringSwap(char str1[], char str2[]);
 void stringCopy(char source[], char dest[]);
 int stringLength(char str[]);
 
-int main() {
+int main(int argc, char *argv[]) {
 	FILE* fp;
 	char character[MAX_TEXT_LENGTH + 1], file_array[ROWS][COLUMNS];
 	
-	fp = fopen(TEXT_FILE, "r");
+	fp = fopen(argv[argc - 1], "r");
 	
 	if (fp == NULL) {
 		printf("Invalid File!\n");
