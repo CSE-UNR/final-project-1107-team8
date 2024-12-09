@@ -1,4 +1,4 @@
-//Jeff
+//Jeff Freal, Aloysius Altarejos, Duy Vo
 //Nov 25 2024
 #include <stdio.h>
 #define TEXT_FILE "madlib2.txt"
