@@ -107,15 +107,16 @@ void read_file_onto_array(FILE* fp, int rows, int columns, char array[rows][colu
 
 void display_array(int rows, int columns, char array[][columns]) {
 	int row, column;
-	char character;
+	char character, punctuation_check;
 	row = 0;
 	
 	while (array[row][0] != '\0') {
 		column = 0;
 		while (array[row][column] != '\0') {
 			character = array[row][column];
+			punctuation_check = array[row+1][0];
 			if (character == '\n') {
-				if (array[row+1][0] != '.' && array[row+1][0] != ',') {
+				if (punctuation_check != '.' && punctuation_check != ',' && punctuation_check != '!') {
 					printf(" ");
 				}
 			} else {
