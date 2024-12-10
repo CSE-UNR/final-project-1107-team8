@@ -13,6 +13,11 @@ void stringCopy(char source[], char dest[]);
 int stringLength(char str[]);
 
 int main(int argc, char *argv[]) {
+	if (argc == 1) {
+		printf("Please enter madlib text file name as a command line argument\n");
+		return 0;
+	}
+	
 	FILE* fp;
 	char character[MAX_TEXT_LENGTH + 1], file_array[ROWS][COLUMNS];
 	
